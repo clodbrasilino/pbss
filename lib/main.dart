@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'bioplastico.dart';
 import 'efeitos_socioeconomicos.dart';
-import 'mainmenucard.dart';
+import 'card.dart';
 import 'plastico.dart';
 import 'reutilizacao.dart';
 
@@ -36,7 +36,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //drawer: Drawer(),
       appBar: AppBar(
         title: Text(widget.title),
 
@@ -52,35 +51,23 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               Column(
                 children: <Widget>[
-                  MainMenuCard(
+                  MyCard(
                     titulo: "O Plástico", 
-                    ponto1: "História", 
-                    ponto2: "Composição",
-                    ponto3: "Origem",
                     imagem: 'assets/images/plastico1.jpg',
                     pagina: Plastico(),
                   ),
-                  MainMenuCard(
+                  MyCard(
                     titulo: "O Bioplástico", 
-                    ponto1: "Origem", 
-                    ponto2: "Composição",
-                    ponto3: "Vantagens",
                     imagem: 'assets/images/bioplastico1.jpg',
                     pagina: Bioplastico(),
                   ),
-                  MainMenuCard(
+                  MyCard(
                     titulo: "A Reutilização", 
-                    ponto1: "História", 
-                    ponto2: "Porque fazer?",
-                    ponto3: "Como fazer?",
                     imagem: 'assets/images/reutilizacao1.jpg',
                     pagina: Reutilizacao(),
                   ),
-                  MainMenuCard(
-                    titulo: "Efeitos Socioeconômicos", 
-                    ponto1: "Reciclagem", 
-                    ponto2: "Custo-benefício",
-                    ponto3: "Efeitos sociais",
+                  MyCard(
+                    titulo: "A Reciclagem", 
                     imagem: 'assets/images/es1.jpg',
                     pagina: EfeitosSocioeconomicos(),
                   ),

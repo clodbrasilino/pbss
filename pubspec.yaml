@@ -61,6 +61,9 @@ flutter:
    - family: BirdsOfParadise
      fonts:
       - asset: assets/fonts/bop.ttf
+   - family: Philosopher
+     fonts:
+      - asset: assets/fonts/philosopher.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
